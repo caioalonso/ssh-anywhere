@@ -2,9 +2,9 @@
 
 test "$port_min"           || port_min="10000"
 test "$port_max"           || port_max="11000"
-test "$local_ssh_port"     || local_ssh_port="26"
+test "$local_ssh_port"     || local_ssh_port="22"
 test "$local_ssh"          || local_ssh="localhost"
-test "$remote_ssh_port"    || remote_ssh_port="26"
+test "$remote_ssh_port"    || remote_ssh_port="22"
 test "$remote_ssh"         || remote_ssh="127.0.0.1"
 test "$remote_server_port" || remote_server_port="3001"
 
