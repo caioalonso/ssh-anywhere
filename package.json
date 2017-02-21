@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/app.js",
   "dependencies": {
-    "external-ip": "^0.2.4",
-    "restify": "^4.3.0"
+    "external-ip": "0.2.4",
+    "restify": "4.3.0"
   },
   "devDependencies": {},
   "scripts": {
