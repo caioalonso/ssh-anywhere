@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var config = {
   localServer: {
@@ -7,6 +7,6 @@ var config = {
   httpServer: {
     port: 3000
   }
-};
+}
 
-module.exports = config;
+module.exports = config
