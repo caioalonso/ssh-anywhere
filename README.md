@@ -51,11 +51,21 @@ ssh `curl your.server/the-hostname-you-want`
 Or if you're lazy, put this in your `.bashrc`:
 ```
 ssha () {
-  ssh `curl --silent http://your.server:3000/$1`
+  ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no `curl --silent http://your.server:3000/$1`
 }
 ```
 
 Now you can:
 ```
 ssha the-hostname-you-want
+```
+
+### systemd service
+
+Edit `src/ssh-loop.service` to fit your username and directory, then:
+
+```
+sudo cp src/ssh-loop.service /etc/systemd/system
+sudo systemctl enable ssh-loop
+sudo systemctl start ssh-loop
 ```
