@@ -1,0 +1,10 @@
+[Unit]
+Description=Remote port forward
+After=network.target
+
+[Service]
+User=caio
+ExecStart=/home/caio/dev/ssh-anywhere/src/ssh-loop.sh
+
+[Install]
+WantedBy=multi-user.target
